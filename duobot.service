@@ -1,0 +1,15 @@
+# this file should go in $HOME/.config/systemd/user/duobot.service
+# per the description below, it will look for the python file in /usr/bin/duobot.py
+
+[Unit]
+Description=Duolingo Bot
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/duobot.py
+Restart=on-abnormal
+
+
+[Install]
+WantedBy=multi-user.target
