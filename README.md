@@ -4,7 +4,9 @@ Duolingo/Telegram bot
 To use this bot on your own, you'll need:
 
 - A Telegram bot (and know its token)
+  - This is provided by the [BotFather](https://telegram.me/BotFather) when you're creating your bot
 - A Telegram group chat set up (and know the chat id)
+  - You can easily get this using [this Stackoverflow answer](https://stackoverflow.com/a/32572159/4034665)
 - A Duolingo account (need to be logged in to access the API)
 
 ## Create a .env file
