@@ -1,13 +1,13 @@
-# this file should go in $HOME/.config/systemd/user/duobot.service
-# per the description below, it will look for the python file in /usr/bin/duobot.py
+# this file should go in /etc/systemd/system/duobot.service
+# the python script should go in a folder /usr/local/bin/duobot/, along with
+# a valid .env file
 
 [Unit]
 Description=Duolingo Bot
-After=multi-user.target
+After=default.target
 
 [Service]
-Type=simple
-ExecStart=/usr/bin/python3 /usr/bin/duobot.py
+ExecStart=/usr/bin/python3 /usr/local/lib/duobot/main.py
 Restart=on-abnormal
 
 
